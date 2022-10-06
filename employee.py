@@ -36,6 +36,8 @@ class MonthlyEmployee(Employee):
     
         string += f". Their total pay is {self.get_pay}"
 
+        return string
+
 
 class ContractEmployee(Employee):
     
@@ -63,6 +65,8 @@ class ContractEmployee(Employee):
     
         string += f". Their total pay is {self.get_pay}"
 
+        return string
+
 
         
        
@@ -76,7 +80,7 @@ billie = MonthlyEmployee('Billie',4000)
 charlie = ContractEmployee('Charlie',25,100)
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
-renee = MonthlyEmployee('Renee',3000,0,220,3)
+renee = MonthlyEmployee('Renee',3000,0,220,4)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
 jan = ContractEmployee('Jan',25,150,0,220,3)
