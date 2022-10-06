@@ -65,7 +65,7 @@ class ContractEmployee(Employee):
         if self.bonus:
           string += f" and recieves a bonus commission of 1500"
     
-        string += f". Their total pay is {self.get_pay}"
+        string += f". Their total pay is {self.get_pay()}"
 
         return string
 
