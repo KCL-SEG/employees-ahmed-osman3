@@ -25,7 +25,7 @@ class MonthlyEmployee(Employee):
         return (self.salary)
     
     def __str__(self):
-        string = f"{self.name} works on a monthly salary of {self.salary}. Their total pay is {self.get_pay}"
+        string = f'{self.name} works on a monthly salary of {self.salary}. Their total pay is {self.get_pay}'
 
         return string
 
@@ -41,7 +41,7 @@ class MonthlyBonus(MonthlyEmployee):
 
 
     def __str__(self):
-        string = f"{self.name} works on a monthly salary of {self.salary} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}"
+        string = f'{self.name} works on a monthly salary of {self.salary} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}'
         return string
 
 
@@ -60,7 +60,7 @@ class MonthlyContract(MonthlyEmployee):
 
 
     def __str__(self):
-        string = f"{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.contracts} contract(s) at {self.contractPay}/contract. Their total pay is {self.get_pay()}"
+        string = f'{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.contracts} contract(s) at {self.contractPay}/contract. Their total pay is {self.get_pay()}'
         return string
 
 
@@ -79,7 +79,7 @@ class HourlyEmployee(Employee):
         
 
     def __str__(self):
-        string = f"{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour.  Their total pay is {self.get_pay()}."
+        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour.  Their total pay is {self.get_pay()}.'
         return string
         
 
@@ -98,7 +98,7 @@ class HourlyContract(HourlyEmployee):
 
 
     def __str__(self):
-        string = f"{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour and receives a commission for {self.contracts} contract(s) at {self.contractPay}/contract. Their total pay is {self.get_pay()}"
+        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour and receives a commission for {self.contracts} contract(s) at {self.contractPay}/contract. Their total pay is {self.get_pay()}'
         return string
 
 
@@ -115,7 +115,7 @@ class HourlyBonus(HourlyEmployee):
 
 
     def __str__(self):
-        string = f"{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}"
+        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}'
         return string
 
 
