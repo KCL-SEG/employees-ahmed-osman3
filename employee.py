@@ -27,15 +27,16 @@ class MonthlyEmployee(Employee):
         
 
     def __str__(self):
-        result = f"{self.name} works on a monthly salary of {self.salary}"
+        # result = f"{self.name} works on a monthly salary of {self.salary}"
        
-        if self.contractPay:
-            result += f"and recieves a commission for {self.contracts} contract(s) at {self.contractPay}/contract"
+        # if self.contractPay:
+        #     result += f"and recieves a commission for {self.contracts} contract(s) at {self.contractPay}/contract"
 
-        if self.bonus:
-          result += f" and recieves a bonus commission of 1500"
+        # if self.bonus:
+        #   result += f" and recieves a bonus commission of 1500"
     
-        result += f". Their total pay is {self.get_pay}"
+        # result += f". Their total pay is {self.get_pay}"
+        result = self.name
 
         return result
 
