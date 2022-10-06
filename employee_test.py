@@ -6,14 +6,14 @@ import re
 
 def test_billie():
     assert billie.get_pay() == 4000
-    print(str(billie))
+    string = str(billie)
     regex = '^Billie works on a monthly salary of 4000.\s+Their total pay is 4000.$'
     assert re.match(regex, string)
 
 def test_charlie():
     assert charlie.get_pay() == 2500
     string = str(charlie)
-
+    
     regex = '^Charlie works on a contract of 100 hours at 25/hour.\s+Their total pay is 2500.$'
     assert re.match(regex, string)
 
