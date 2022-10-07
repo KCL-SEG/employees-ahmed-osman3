@@ -79,7 +79,7 @@ class HourlyEmployee(Employee):
         
 
     def __str__(self):
-        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour.  Their total pay is {self.get_pay()}$.'
+        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour.  Their total pay is {self.get_pay()}$'
         return string
         
 
@@ -115,7 +115,7 @@ class HourlyBonus(HourlyEmployee):
 
 
     def __str__(self):
-        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}$.'
+        string = f'{self.name} works on a contract of {self.wageHours} hours at {self.wage}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}$'
         return string
 
 
@@ -126,27 +126,24 @@ class HourlyBonus(HourlyEmployee):
 
 # # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billie = MonthlyEmployee('Billie',4000)
-string = str(billie)
-regex = '^Billie works on a monthly salary of 4000.\s+Their total pay is 4000.$'
-print(re.match(regex, string))
+
 # # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlie = HourlyEmployee('Charlie',25,100)
-print(str(charlie))
 
 # # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
-renee = MonthlyContract('Renee',3000,220,4)
+renee = MonthlyContract('Renee',3000,4,200)
 print(str(renee))
 
 # # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = HourlyContract('Jan',25,150,220,3)
+jan = HourlyContract('Jan',25,150,3,220)
 print(str(jan))
 
 # # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = MonthlyBonus('Robbie',2000,1500)
-print(str(robbie))
+
 
 # # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = HourlyBonus('Ariel',30,120,600)
-print(str(ariel))
+
 
 

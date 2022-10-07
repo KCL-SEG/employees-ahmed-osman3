@@ -7,6 +7,7 @@ import re
 def test_billie():
     assert billie.get_pay() == 4000
     string = str(billie)
+    
     regex = '^Billie works on a monthly salary of 4000.\s+Their total pay is 4000.$'
     assert re.match(regex, string)
 
@@ -26,6 +27,7 @@ def test_renee():
 def test_jan():
     assert jan.get_pay() == 4410
     string = str(jan)
+    print(string)
     regex  = 'Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract\(s\) at 220/contract.\s+Their total pay is 4410.'
     assert re.match(regex, string)
 
